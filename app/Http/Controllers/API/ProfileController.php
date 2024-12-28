@@ -11,7 +11,7 @@ class ProfileController extends Controller
 
     public function __construct()
     {
-        $this->middleware(['auth:api', 'verfiedAccount']);
+        $this->middleware(['auth:api', 'verifiedAccount']);
     }
 
     public function storeupdate(Request $request) {
